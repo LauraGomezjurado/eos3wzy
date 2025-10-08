@@ -1,0 +1,36 @@
+# Micro-pKa Screening Pipeline Requirements
+# Based on QupKake model (Abarbanel & Hutchison, 2024)
+
+# Core dependencies
+pandas>=1.5.0
+numpy>=1.21.0
+scipy>=1.9.0
+
+# Chemistry and molecular modeling
+rdkit>=2022.09.1
+openbabel>=3.1.1
+
+# Machine learning and deep learning
+torch>=1.12.0
+torch-geometric>=2.1.0
+pytorch-lightning>=1.7.0
+
+# Quantum chemistry (xtb/GFN2-xTB)
+# Note: xtb must be installed separately from source or conda
+
+# QupKake model
+git+https://github.com/Shualdon/QupKake.git
+
+# Utilities
+tqdm>=4.64.0
+click>=8.0.0
+pathlib2>=2.3.0
+
+# Development and testing
+pytest>=7.0.0
+pytest-cov>=4.0.0
+black>=22.0.0
+flake8>=5.0.0
+
+# Logging and monitoring
+multiprocessing-logging>=0.3.0
